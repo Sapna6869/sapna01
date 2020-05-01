@@ -1,0 +1,47 @@
+* { margin: 0; padding: 0 font family 'Josefin Sans' sans, sans-serif;
+}
+
+  
+
+    @import 'header' ;
+    @import 'variable';
+
+ 
+    
+header {
+    @include header;
+    height: 20vh;
+    flex-direction: coloum;
+    button {
+                height: 15vh;
+                width: 25vh;
+                margin: 10px;
+                flex-direction: row;
+                font-size: 20px;
+               
+                transition-duration: 0.5s;
+                background: lightblue;
+                border: 1px solid black;
+                float: center;
+                border-radius: 50%; 
+                    &:hover {
+                         background: #0abde3;
+                         font-weight: bold;
+                         text-transform: uppercase; }
+        
+    }
+}
+        .secondheader {  
+            height: 100vh;
+            flex-direction: column;
+                h3{
+                   @include comoncode; 
+                    font-size: 40px;
+                        &:hover {color: #48dbfb;}
+                     }
+                                p {
+                                    @include comoncode;
+                                    font-size: 15px;
+                                    text-align: justify;
+                                  }
+}

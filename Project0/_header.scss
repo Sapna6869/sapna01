@@ -1,0 +1,7 @@
+@mixin header { width: 100% - 20%;  /* for layout */
+    margin: 0 auto;
+    background: $background;
+    color: $textcolor;
+    display: flex;
+   }
+   @mixin comoncode{ color: $textcolor; }
